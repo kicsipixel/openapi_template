@@ -1,0 +1,22 @@
+openapi: "3.1.0"
+info:
+  title: Template project using OpenAPI
+  description: Template server built on [Hummingbird](https://hummingbird.codes/) and [Swift OpenAPI Generator](https://github.com/apple/swift-openapi-generator).
+  version: 1.0.0
+
+servers:
+  - url: http://localhost:8080
+    description: This is the server.
+
+paths:
+  # Health
+  # curl -i http://localhost:8080/health
+  #
+  /health:
+    get:
+      summary: Server health status
+      description: Responses with 200 OK
+      operationId: healthCheck
+      responses:
+        "200":
+          description: Server health status
