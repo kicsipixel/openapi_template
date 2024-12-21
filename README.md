@@ -14,3 +14,9 @@ And then call the configure script with a path argument. This will create a new 
 ```bash
 ./configure.sh <path to new project>
 ```
+
+Default route is `/health`:
+
+```bash
+curl -i http://localhost:8080/health
+```
