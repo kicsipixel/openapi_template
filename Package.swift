@@ -31,6 +31,7 @@ let package = Package(
     .executableTarget(
       name: "{{HB_EXECUTABLE_NAME}}",
       dependencies: [
+        .target(name: "APIService"),
         .product(name: "ArgumentParser", package: "swift-argument-parser"),
         .product(name: "Hummingbird", package: "hummingbird"),
         // OpenAPI
