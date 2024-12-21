@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 FOLDER=${1:-}
-TEMPLATE_VERSION=0.9.0
+TEMPLATE_VERSION=0.9.1
 
 if [[ -z "$FOLDER" ]]; then
   echo "Missing folder name"
