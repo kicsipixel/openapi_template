@@ -8,4 +8,6 @@ if [[ -z "$FOLDER" ]]; then
   exit 1
 fi
 
-curl -sSL https://github.com/kicsipixel/openapi_template/archive/refs/tags/"$TEMPLATE_VERSION".tar.gz | tar xvz -s /template-"$TEMPLATE_VERSION"/"$FOLDER"/
+curl -sSL https://github.com/kicsipixel/openapi_template/archive/refs/tags/"$TEMPLATE_VERSION".tar.gz | tar xvz -s /openapi_template-"$TEMPLATE_VERSION"/"$FOLDER"/
+
+touch "$FOLDER"/Sources/APIService/empty.swift
