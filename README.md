@@ -2,7 +2,7 @@
 
 Template for Hummingbird App using OpenAPI Generator
 
-Either click on `Use this template` or run the following to clone locally.
+Run the following to clone locally.
 ```bash
 curl -L https://raw.githubusercontent.com/kicsipixel/openapi_template/refs/heads/main/scripts/download.sh | bash -s <project-name> 
 ```
