@@ -23,10 +23,6 @@ struct HummingbirdAPIService: AsyncParsableCommand {
       configuration: .init(address: .hostname(hostname, port: port))
     )
 
-    try await withThrowingDiscardingTaskGroup { group in
-      group.addTask {
-        try await app.runService()
-      }
-    }
+    try await app.runService()
   }
 }
